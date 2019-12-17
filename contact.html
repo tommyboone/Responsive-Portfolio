@@ -14,6 +14,7 @@
          }
          p{
              font-size:14px;
+             text-align:center;
          }
          
          footer{
@@ -41,9 +42,14 @@
         border: rgb(97, 189, 97);
 
       }
-    
+      
       
     
+      .center-box{
+          margin:auto;
+          padding:14px;
+          position:relative;
+      }
          
      </style>
     <meta charset="UTF-8">
@@ -105,10 +111,10 @@
 
                 <!--Grid row-->
                 <div class="row">
-                 <div class="col-md-1"></div>
+                 <div class="col-md-4"></div>
 
                     <!--Grid column-->
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <div class="md-form mb-0">
                             <input type="text" id="name" name="name" class="form-control">
                             <label for="name" class="">Your name</label>
@@ -117,7 +123,7 @@
                     <!--Grid column-->
 
                     <!--Grid column-->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="md-form mb-0">
                             <input type="text" id="email" name="email" class="form-control">
                             <label for="email" class="">Your email</label>
@@ -130,8 +136,8 @@
 
                 <!--Grid row-->
                 <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-11">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8">
                         <div class="md-form mb-0">
                             <input type="text" id="subject" name="subject" class="form-control">
                             <label for="subject" class="">Subject</label>
@@ -142,9 +148,9 @@
 
                 <!--Grid row-->
                 <div class="row">
-                    <div class="col-md-1"></div>
+                    <div class="col-md-4"></div>
                     <!--Grid column-->
-                    <div class="col-md-11">
+                    <div class="col-md-8">
 
                         <div class="md-form">
                             <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
@@ -166,25 +172,37 @@
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>Minneapolis, MN 55401, USA</p>
-                </li>
 
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 1 919 390 4006</p>
-                </li>
-
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>tommyboone23@gmail.com</p>
-                </li>
-            </ul>
-        </div>
         <!--Grid column-->
 
     </div>
+    <br>
+    <div class="container">
+        <div class="row row-cols-3">
+            <br>
+          <div class="col">
+            <i class="fas fa-map-marker-alt fa-2x center-box"></i>
+            <p>Minneapolis, MN 55401, USA</p>
+          </div>
+          <div class="col">
+            <i class="fas fa-phone mt-4 fa-2x"></i>
+            <p>+ 1 919 390 4006</p>
+          </div>
+          <div class="col">
+            <i class="fas fa-envelope mt-4 fa-2x"></i>
+            <p>tommyboone23@gmail.com</p>
+          </div>
+      
+        </div>
+      </div>
+        
+            
+         
 
+         
+            
+        </ul>
+    </div>
 </section>
 <!--Section: Contact v.2-->
 
