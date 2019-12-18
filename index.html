@@ -14,7 +14,7 @@
         
 
          .carousel{
-           margin-bottom:10%;
+           margin-bottom:5%;
          }
          p{
              font-size:16px;
@@ -77,6 +77,8 @@
          max-width: 100%; 
          height: auto;
       }  
+
+    
      
          
      </style>
@@ -97,14 +99,14 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#section1">About</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Explore
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Experience</a>
+                <a class="dropdown-item" href="#section2">Experience</a>
                 <a class="dropdown-item" href="portfolio.html">Previous Work</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="contact.html">Let's work together</a>
@@ -123,7 +125,7 @@
 </head>
 <!--Body-->
 <main>
-<body>
+<body data-spy="scroll" data-target=".navbar">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -137,12 +139,18 @@
           </div>
         </div>
       </div>
+      <div id="section1">
+      <br>
+      <br>
+      <br>
 
-      <div class="container">
+      <div class="container" >
           <div class="row-sm-12">
               <h1>About</h1>
           </div>
+          
       </div>
+      
       <br>
       <div class="container">
         <div class="row row-cols-3">
@@ -158,6 +166,7 @@
           
         </div>
     </div>
+ 
     <br>
     
       <div class="container">
@@ -182,9 +191,10 @@
       
         </div>
       </div>
-<br>
-<br>
-<br>
+    </div>
+    
+<div id="section2">
+
 <div class="container-2">
   <h3>Experience</h3>
   <br>
@@ -202,6 +212,7 @@
       <i class="fas fa-list fa-7x"></i>
     </div>
   </div>
+</div>
 </div>
 <br>
 <br>
