@@ -4,12 +4,60 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
      rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
      crossorigin="anonymous">
+     <script src="https://kit.fontawesome.com/8cf68bdaad.js" crossorigin="anonymous"></script>
+     <link href="https://fonts.googleapis.com/css?family=Barlow|Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+           footer{
+         color:white;
+         background-color:black;
+         text-align:center;
+         font-size:10px;
+         font-family:Arial, Helvetica, sans-serif;
+         padding:10px;
+         border-top:3px solid rgb(97, 189, 97);
+         position:fixed;
+         left: 0 ; right: 0; bottom: 0; 
+         margin:0;
+       }
+
+      nav{
+        border-bottom:3px solid rgb(97, 189, 97);
+       
+      }
+      .sticky-top{
+        position:sticky;
+      }
+      
+      .card-body{
+          background-color:rgb(97, 189, 97);
+          text-align:center;
+          opacity: 0.7;
+          color:#fff;
+          height: 120%;
+      }
+      
+      .btn-light-gray{
+          color:#000;
+          background-color:lightgrey;
+          border:1px solid black;
+      }
+
+      .col-center{
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+      }
+
+     
+      
+    
+      </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Portfolio</title>
     <!--NavBar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <a class="navbar-brand" href="#">Tommy Boone</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -18,22 +66,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="">About</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Explore
+                Explore
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Experience</a>
+                <a class="dropdown-item" href="#">Previous Work</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="contact.html">Let's work together</a>
               </div>
             </li>
+        
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -41,10 +90,76 @@
           </form>
         </div>
       </nav>
+      
 </head>
 <!--Body-->
 <body>
+<!-- Grid row -->
+<div class="row">
 
+    <!-- Grid column -->
+    <div class="col-lg-2 mb-lg-0 mb-4">
+
+      <!-- Contact Card -->
+      <div class="card">
+        <div class="card-body">
+          <!-- Header -->
+          <div class="form-header blue accent-1">
+            <h3 class="mt-2"><i class="fas fa-envelope"></i> Have a Question?</h3>
+          </div>
+          <p class="dark-grey-text">Let me know how I can help.</p>
+          <!-- Body -->
+          <div class="md-form">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input type="text" id="form-name" class="form-control">
+            <label for="form-name">Your name</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="text" id="form-email" class="form-control">
+            <label for="form-email">Your email</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-tag prefix grey-text"></i>
+            <input type="text" id="form-Subject" class="form-control">
+            <label for="form-Subject">Subject</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-pencil-alt prefix grey-text"></i>
+            <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+            <label for="form-text">Send message</label>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-light-gray">Send</button>
+          </div>
+        </div>
+      </div>
+     
+    
+
+    </div>
+    <!--Image Columns-->
+    <div class="col">
+        <div class="col-rows-2">
+          <img src="https://bethlehemhandcrafts.org/wp-content/uploads/woocommerce-placeholder-325x325.png">
+          <img src="https://bethlehemhandcrafts.org/wp-content/uploads/woocommerce-placeholder-325x325.png"></div>
+        </div>
+       
+    <div class="col">
+        <div class="col-rows-2">
+            <img src="https://bethlehemhandcrafts.org/wp-content/uploads/woocommerce-placeholder-325x325.png">
+            <img src="https://bethlehemhandcrafts.org/wp-content/uploads/woocommerce-placeholder-325x325.png"></div>
+        
+        
+          </div>
+          <div class="col"><div class="col-rows-2">
+            <img src="https://bethlehemhandcrafts.org/wp-content/uploads/woocommerce-placeholder-325x325.png">
+            <img src="https://bethlehemhandcrafts.org/wp-content/uploads/woocommerce-placeholder-325x325.png"></div>
+        </div>
+      </div>
+    </div>
+
+      
 
 
 
@@ -52,4 +167,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+<footer class="footer">
+    Copyright &copy; 2019
 </html>
