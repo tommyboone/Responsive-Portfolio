@@ -5,72 +5,10 @@
      rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
      crossorigin="anonymous">
      <script src="https://kit.fontawesome.com/8cf68bdaad.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
      <link href="https://fonts.googleapis.com/css?family=Barlow|Bebas+Neue&display=swap" rel="stylesheet">
-    <style>
-           footer{
-         color:white;
-         background-color:black;
-         text-align:center;
-         font-size:10px;
-         font-family:Arial, Helvetica, sans-serif;
-         padding:10px;
-         border-top:3px solid rgb(97, 189, 97);
-         position:fixed;
-         left: 0 ; right: 0; bottom: 0; 
-         margin:0;
-       }
-
-      nav{
-        border-bottom:3px solid rgb(97, 189, 97);
-       
-      }
-      .sticky-top{
-        position:sticky;
-      }
-      
-      .card-body{
-          background-color:rgb(97, 189, 97);
-          text-align:center;
-          opacity: 0.9;
-          color:#fff;
-          height: 120%;
-          font-family: 'Barlow', sans-serif;
-          font-weight:1200;
-          padding-bottom:100%;
-        
-      }
-      
-      .btn-light-gray{
-          color:#000;
-          background-color:lightgrey;
-          border:1px solid black;
-      }
-
-      .col-center{
-        margin-left:auto;
-        margin-right:auto;
-        display:block;
-      }
-      .img-fluid{
-         max-width: 100%; 
-         height: auto;
-      } 
-
-      img{
-        border: 1px solid lightgray;
-        
-      }
-
-      img:hover{
-        border:5px solid black;
-        opacity:0.4;
-      }
-   
-      .dropdown-item:hover{
-        background-color:rgb(97, 189, 97);
-      }
-    
-      </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
+ 
       </head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -99,14 +37,14 @@
                 <a class="dropdown-item" href="index.html#section2">Experience</a>
                 <a class="dropdown-item" href="#">Previous Work</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="contact.html">Let's work together</a>
+                <a class="dropdown-item" id="contact-page" href="contact.html">Let's work together</a>
               </div>
             </li>
         
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <a href="https://github.com/tommyboone"><i class="fab fa-github-square fa-3x" ></i></a>
+            <a href="https://www.linkedin.com/in/tommy-boone-55b57ab7?trk=people-guest_people_search-card"><i class="fab fa-linkedin fa-3x"></i></a>
           </form>
         </div>
       </nav>
@@ -115,6 +53,7 @@
 <!--Body-->
 <body>
 <!-- Grid row -->
+
 <div class="row">
 
     <!-- Grid column -->
@@ -159,40 +98,44 @@
 
     </div>
     <!--Image Columns-->
+    <div class = "row">
     <div class="col">
-        <div class="col-xs-12-md-4">
-          <img src="images/2014_FHD.jpeg" height="325" width="325" class="img-fluid">
+        <div class="col-xs-12-md-4 weatherCol">
+          <img src="images/Weather_Dashboard_Screenshot.png"  height="375" width="375" class="img-fluid portfolio-image" id="weatherDash">
+          <!-- <button class="btn btn-success hide" id="githubWeather" href="https://github.com/tommyboone/Weather_Dashboard">GitHub</button> -->
           <br>
           <br>
-          <img src="images/Low_Teens_ETID.jpg" height="325" width="325" class="img-fluid"></div>
-        </div>
-       
-    <div class="col">
-        <div class="col-xs-12-md-3">
-            <img src="images/swimming_cover.jpg"height="325" width="325" class="img-fluid">
-            <br>
-            <br>
-            <img src="images/C&C_Bring_Cover.jpeg" height="325" width="325" class="img-fluid"></div>
-        
-        
-          </div>
-          <div class="col">
-            <div class="col-xs-12-md-3">
-            <img src="images/RTD_cover.jpg" height="325" width="325" class="img-fluid">
-            <br>
-            <br>
-            <img src="images/Chariot_Long_Live.jpeg" height="325" width="325" class="img-fluid"></div>
+         
         </div>
       </div>
-    </div>
+       
+    <div class="col">
+        <div class="col-xs-12-md-3 plannerCol">
+            <img src="images/Work_Day_Planner_Screenshot.png"height="375" width="375" class="img-fluid portfolio-image" id="dayPlanner">
+            <br>
+            <br>
+          </div>
+         </div> 
+    <div class="col">
+            <div class="col-xs-12-md-3 travelCol">
+            <img src="images/Travel_Master.png" height="375" width="375" class="img-fluid portfolio-image" id="travelMaster">
+            
+        </div>
+      </div>
+      <br>
+      <br>
+    
+  
 
       
 
 
-
+   
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
 </body>
 <footer class="footer">
     Copyright &copy; 2019
