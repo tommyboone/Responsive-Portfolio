@@ -12,11 +12,12 @@ $( document ).ready(function() {
   
   });
 
+
     
-var weatherButton=  $("<a>").text('GitHub  ').addClass("btn btn-success hide");
+var weatherButton=  $("<a>").text('GitHub  ').addClass("btn btn-success hide ");
     weatherButton.attr('href', 'https://github.com/tommyboone/Weather_Dashboard')
 
-var weatherPage = $("<a>").text("Website").addClass("btn btn-success hide");
+var weatherPage = $("<a>").text("Website").addClass("btn btn-success hide ");
     weatherPage.attr('href', "https://tommyboone.github.io/Weather_Dashboard/")    
 
 var plannerButton = $("<a>").text('GitHub ').addClass("btn btn-success hide");
@@ -25,29 +26,84 @@ var plannerButton = $("<a>").text('GitHub ').addClass("btn btn-success hide");
 var plannerPage = $("<a>").text("Website").addClass("btn btn-success hide");
     plannerPage.attr('href', "https://tommyboone.github.io/Day_Planner")
 
+var travelButton =  $("<a>").text('GitHub  ').addClass("btn btn-success hide travelButton");
+    travelButton.attr('href', 'https://github.com/stevekindt/Project-1');
+
+var travelPage = $("<a>").text("Website").addClass("btn btn-success hide travelPage");
+    travelPage.attr('href', "https://stevekindt.github.io/Project-1/")    
+
+var weatherSpan = $("<span>").text("Weather Dashboard ").addClass('hide');
+var plannerSpan = $("<span>").text("Day Planner ").addClass('hide');
+var travelSpan = $("<span>").text("Travel Master ").addClass('hide travelSpan');
+
+
+
 
   $('#weatherDash').mouseenter(function(){
+    $('#weatherDash').css('opacity', '0.1');
     $(weatherButton).removeClass('hide');
     $(weatherPage).removeClass('hide');
-    // $(".weatherCol").append("Weather Dashboard ");
-    $(".weatherCol").append(weatherButton, " ");
-    $(".weatherCol").append(weatherPage);
+    $(weatherSpan).removeClass('hide');
+    var weatherContainer = $("<div>").append(weatherSpan, weatherButton, " ", weatherPage).addClass('weatherContainer');
+    $(".weatherContainer").remove();
+    $(".weatherCol").append(weatherContainer);
+ 
 
-  })
-  $('#weatherDash').mouseleave(function(){
-    $(weatherButton).addClass('hide');
-    $(weatherPage).addClass('hide');
-  })
 
-  // $("#dayPlanner").mouseenter(function(){
-  //   $(plannerButton).removeClass('hide');
-  //   $(plannerPage).removeClass('hide');
-  //   $('.plannerCol').append(plannerButton, ' ');
-  //   $('.plannercol').append(plannerPage);
-  // }
+  });
+  $('.weatherCol').mouseleave(function(){
+    $('#weatherDash').css('opacity', '1');
+    weatherButton.addClass('hide');
+    weatherPage.addClass('hide');
+    weatherSpan.addClass('hide');
+  }); 
+  
+  $("#dayPlanner").mouseenter(function(){
+    $("#dayPlanner").css('opacity', '0.2')
+    $(plannerButton).removeClass('hide');
+    $(plannerPage).removeClass('hide');
+    $(plannerSpan).removeClass('hide');
+    var plannerContainer = $("<div>").append(plannerSpan, plannerButton, " ", plannerPage).addClass('plannerContainer');
+    $('.plannerCol').append(plannerContainer);
+
+    
+  });
+
+  $('.plannerCol').mouseleave(function(){
+    $('#dayPlanner').css('opacity', '1');
+    plannerButton.addClass('hide');
+    plannerPage.addClass('hide');
+    plannerSpan.addClass('hide');
+  }); 
+
+  $("#travelMaster").mouseenter(function(){
+    $("#travelMaster").css('opacity', '0.1');
+    $(".travelButton").removeClass('hide');
+    $(".travelPage").removeClass('hide');
+    $(".travelSpan").removeClass('hide');
+    var travelContainer = $("<div>").append(travelSpan, travelButton, " ", travelPage).addClass('travelContainer');
+    $(".travelCol").append(travelContainer);
+
+    
+  });
+
+  $('.travelCol').mouseleave(function(){
+    $('#travelMaster').css('opacity', '1');
+    $(".travelButton").addClass('hide');
+    $(".travelPage").addClass('hide');
+    $(".travelSpan").addClass('hide');
+  }); 
+
+ 
+  $('.carousel-inner').animate({opacity:'1'}, 1500);
+
+
+ 
+
 
 
 
   
 });
+
   
