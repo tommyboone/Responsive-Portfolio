@@ -1,6 +1,8 @@
 # Responsive-Portfolio
 
-permalink: /index.html
+# Link
+https://tommyboone.github.io/Responsive-Portfolio/index.html
 
-BootStrap Responsive-Portfolio Project
+# ScreenShot
+![alt_text](./images/Portfolio-ScreenShot.png)
 
