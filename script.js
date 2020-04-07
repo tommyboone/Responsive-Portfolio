@@ -64,6 +64,7 @@ var travelSpan = $("<span>").text("Travel Master ").addClass('hide travelSpan');
     $(plannerPage).removeClass('hide');
     $(plannerSpan).removeClass('hide');
     var plannerContainer = $("<div>").append(plannerSpan, plannerButton, " ", plannerPage).addClass('plannerContainer');
+    $('.plannerContainer').remove();
     $('.plannerCol').append(plannerContainer);
 
     
